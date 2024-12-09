@@ -1,0 +1,157 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .header #menu-icon {
+    font-size: 24px;
+    color: #000;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .navbar {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .navbar li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .navbar li a:hover {
+    color: #19853f;
+  }
+  
+  /* Home Section */
+  .home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 5%;
+    background-color: #fff;
+    flex-wrap: wrap;
+  }
+  
+  .home-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .home-content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #777;
+  }
+  
+  .home-content h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #19853f;
+  }
+  
+  .home-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  .home-content .btn {
+    text-decoration: none;
+    background-color: #19853f;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .home-content .btn:hover {
+    background-color: #19853f;
+  }
+
+  .home-img {
+    flex: 1;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .home-img img {
+    width: 80%;
+    max-width: 350px;
+    border-radius: 10px;
+    border: 5px solid #19853f;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    animation: bounce 3s ease-in-out infinite;
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(-10px);
+    }
+    50% {
+      transform: translateY(0);
+    }
+    75% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .home-img img {
+      max-width: 80%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .home-img img {
+      max-width: 90%;
+    }
+  }
+  
+ 
+  
